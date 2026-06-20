@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makanan & Minuman</title>
+    <style>
+        /* Gaya dasar untuk latar belakang dan font */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Desain kartu pembungkus menu */
+        .menu-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+            padding: 30px 40px;
+            max-width: 900px;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        /* Judul Menu */
+        h1 {
+            text-align: center;
+            color: #e67e22; /* Warna oranye yang menggugah selera */
+            margin-bottom: 30px;
+            font-size: 2em;
+            border-bottom: 2px dashed #e67e22;
+            padding-bottom: 15px;
+        }
+
+        /* Gaya Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        /* Header Tabel */
+        th {
+            background-color: #e67e22;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9em;
+        }
+
+        th:first-child {
+            border-top-left-radius: 8px;
+        }
+
+        th:last-child {
+            border-top-right-radius: 8px;
+        }
+
+        /* Efek sorotan saat baris dilewati kursor */
+        tr:hover {
+            background-color: #fdf3ea;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Kustomisasi Teks */
+        .kategori {
+            font-weight: bold;
+            color: #d35400;
+            font-size: 1.1em;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+
+        .nama-menu {
+            font-size: 1.1em;
+            color: #2c3e50;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .deskripsi {
+            font-size: 0.85em;
+            color: #7f8c8d;
+            line-height: 1.4;
+        }
+
+        .harga {
+            font-weight: bold;
+            color: #27ae60; /* Hijau untuk menonjolkan harga */
+            white-space: nowrap;
+            font-size: 1.1em;
+            vertical-align: top;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="menu-container">
+    <h1>🍽️ Daftar Menu Makanan & Minuman</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Kategori</th>
+                <th>Nama Menu & Deskripsi</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="kategori" rowspan="3">Makanan Utama</td>
+                <td>
+                    <strong class="nama-menu">Nasi Goreng Spesial</strong>
+                    <div class="deskripsi">Nasi goreng bumbu rempah dengan telur mata sapi, ayam suwir, dan kerupuk.</div>
+                </td>
+                <td class="harga">Rp 25.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="nama-menu">Mie Goreng Ayam</strong>
+                    <div class="deskripsi">Mie goreng gurih dengan tambahan potongan ayam, sawi, dan telur orak-arik.</div>
+                </td>
+                <td class="harga">Rp 22.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="nama-menu">Ayam Bakar Madu</strong>
+                    <div class="deskripsi">Ayam bakar manis gurih yang disajikan lengkap dengan nasi putih dan sambal terasi.</div>
+                </td>
+                <td class="harga">Rp 30.000</td>
+            </tr>
+            
+            <tr>
+                <td class="kategori" rowspan="2">Camilan</td>
+                <td>
+                    <strong class="nama-menu">Kentang Goreng</strong>
+                    <div class="deskripsi">Potongan kentang renyah dengan taburan garam dan saus sambal.</div>
+                </td>
+                <td class="harga">Rp 15.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="nama-menu">Pisang Cokelat Keju</strong>
+                    <div class="deskripsi">Pisang panggang dengan lelehan cokelat dan taburan keju parut.</div>
+                </td>
+                <td class="harga">Rp 18.000</td>
+            </tr>
+
+            <tr>
+                <td class="kategori" rowspan="3">Minuman</td>
+                <td>
+                    <strong class="nama-menu">Es Kopi Susu Aren</strong>
+                    <div class="deskripsi">Paduan espreso, susu segar, dan manisnya gula aren asli.</div>
+                </td>
+                <td class="harga">Rp 20.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="nama-menu">Es Jeruk Peras</strong>
+                    <div class="deskripsi">Perasan jeruk segar murni dengan es batu.</div>
+                </td>
+                <td class="harga">Rp 12.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <strong class="nama-menu">Es Teh Manis</strong>
+                    <div class="deskripsi">Teh seduh beraroma melati dengan tambahan gula dan es.</div>
+                </td>
+                <td class="harga">Rp 5.000</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
